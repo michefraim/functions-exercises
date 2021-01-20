@@ -1,7 +1,9 @@
 //Question 1
 function myReverse(str) {
-  // your code here
-  return "";
+  let str2 = str.split("");
+  str2.reverse();
+  let strNew = str2.join("");
+  return strNew;
 }
 
 //Question 2
@@ -40,7 +42,6 @@ function isPrefectNumber(num) {
 // *** Playground ***
 // Feel free to run and test your code here on your own
 
-// *** End of Playground ***
 
 // Don't touch me :)
 exports.myReverse = myReverse;
