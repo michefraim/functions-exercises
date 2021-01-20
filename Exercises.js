@@ -9,18 +9,23 @@ function myReverse(str) {
 //Question 2
 function allCombinations(str) {
   let combinations = [];
-  // your code here
-
-  //
+  for (let i = 0; i <= str.length; i++) {
+    for (let j = i + 1; j <= str.length; j++) {
+      combinations.push(str.slice(i, j));
+    }
+  }
   return combinations;
 }
 
 //Question 3
 function allCaps(str) {
-  // your code here
-  return "";
+  const arr = str.split(" ");
+  for (let i = 0; i < arr.leng; i++) {
+    toUpperCase(arr[i][0]); 
+  }
+  strNew = arr.join("");
+  return strNew;
 }
-
 //Question 4
 function myPower(x, n) {
   // your code here
@@ -42,8 +47,8 @@ function isPrefectNumber(num) {
 // *** Playground ***
 // Feel free to run and test your code here on your own
 
-
 // Don't touch me :)
+
 exports.myReverse = myReverse;
 exports.allCombinations = allCombinations;
 exports.allCaps = allCaps;
