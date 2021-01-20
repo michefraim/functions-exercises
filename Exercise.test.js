@@ -29,7 +29,7 @@ describe("Question 2", () => {
 });
 
 describe("Question 3", () => {
-  it("Should capitalize all words in sentance", () => {
+  it("Should capitalize all words in sentence", () => {
     const input = "i am a cyber4s student";
     const expOutput = "I Am A Cyber4s Student";
     const output = allCaps(input);

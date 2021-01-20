@@ -27,16 +27,22 @@ function allCaps(str) {
   newStr = arr.join(" ");
   return newStr;
 }
+
 //Question 4
 function myPower(x, n) {
-  // your code here
-  return "";
+  return Math.pow(x, n); // Am i missing something? lol
 }
 
 //Question 5
 function getFirstNotRepeating(str) {
-  // your code here
-  return "";
+  let pos = 0;
+  for (let i = 0; i < str.length; i++) {
+    const newStr = str.slice(0, i) + str.slice(i + 1); // removes 1 letter from the string.
+    pos = newStr.indexOf(str[i]);
+    if (pos === -1) {
+      return str[i];
+    }
+  }
 }
 
 //Question 6 (Bonus)
@@ -47,18 +53,6 @@ function isPrefectNumber(num) {
 
 // *** Playground ***
 // Feel free to run and test your code here on your own
-
-const str = "the quick brown fox";
-// const arr = str.split(" ");
-// console.log(arr);
-// for (let i = 0; i < arr.length; i++) {
-//   let newStr = arr[i][0].toUpperCase() + arr[i].substring(1);
-//   arr[i] = newStr;
-//   console.log(newStr);
-// }
-// newStr = arr.join(" ");
-// console.log(newStr);
-
 
 // Don't touch me :)
 
