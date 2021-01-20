@@ -20,11 +20,12 @@ function allCombinations(str) {
 //Question 3
 function allCaps(str) {
   const arr = str.split(" ");
-  for (let i = 0; i < arr.leng; i++) {
-    toUpperCase(arr[i][0]); 
+  for (let i = 0; i < arr.length; i++) {
+    const newStr = arr[i][0].toUpperCase() + arr[i].substring(1);
+    arr[i] = newStr;
   }
-  strNew = arr.join("");
-  return strNew;
+  newStr = arr.join(" ");
+  return newStr;
 }
 //Question 4
 function myPower(x, n) {
@@ -46,6 +47,18 @@ function isPrefectNumber(num) {
 
 // *** Playground ***
 // Feel free to run and test your code here on your own
+
+const str = "the quick brown fox";
+// const arr = str.split(" ");
+// console.log(arr);
+// for (let i = 0; i < arr.length; i++) {
+//   let newStr = arr[i][0].toUpperCase() + arr[i].substring(1);
+//   arr[i] = newStr;
+//   console.log(newStr);
+// }
+// newStr = arr.join(" ");
+// console.log(newStr);
+
 
 // Don't touch me :)
 
