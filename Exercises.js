@@ -47,8 +47,21 @@ function getFirstNotRepeating(str) {
 
 //Question 6 (Bonus)
 function isPrefectNumber(num) {
-  // your code here
-  return "I'm not interested in the bonus question :(";
+  let sum = 0;
+
+  for (let i = 1; i < num; i++)  {
+    if (num % i === 0) {
+      sum += i; 
+    }
+  }
+
+  if (num === sum) 
+  {
+    return true;
+  }
+  else {
+   return false;
+  }
 }
 
 // *** Playground ***
